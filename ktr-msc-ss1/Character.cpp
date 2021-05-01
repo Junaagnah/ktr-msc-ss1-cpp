@@ -53,7 +53,7 @@ namespace ktrmscss1
 		{
 			this->attack(weapon);
 		}
-		catch (const ktrmscss1::WeaponException& exception)
+		catch (WeaponException& exception)
 		{
 			printf("%s\n", exception.what());
 		}

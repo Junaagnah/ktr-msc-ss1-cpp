@@ -25,41 +25,41 @@ namespace ktrmscss1
 		{
 			if (weapon == "hammer" || weapon == "sword")
 			{
-				ktrmscss1::Character::attack(weapon);
-				printf("%s: I'll crush you with my %s!", this->name.c_str(), weapon.c_str());
+				Character::attack(weapon);
+				printf("%s: I'll crush you with my %s!\n", this->name.c_str(), weapon.c_str());
 			}
 			else
 			{
-				throw new ktrmscss1::WeaponException(this->name + ": A " + weapon + " ?? What should I do with this ?");
+				throw WeaponException(this->name + ": A " + weapon + " ?? What should I do with this ?");
 			}
 		}
 		else
 		{
-			throw new ktrmscss1::WeaponException(this->name + ": I refuse to fight with my bare hands !");
+			throw WeaponException(this->name + ": I refuse to fight with my bare hands !");
 		}
 	}
 
 	void Warrior::moveRight()
 	{
-		ktrmscss1::Character::moveRight();
+		Character::moveRight();
 		printf(" like a bad boy.\n");
 	}
 
 	void Warrior::moveLeft()
 	{
-		ktrmscss1::Character::moveLeft();
+		Character::moveLeft();
 		printf(" like a bad boy.\n");
 	}
 
 	void Warrior::moveForward()
 	{
-		ktrmscss1::Character::moveForward();
+		Character::moveForward();
 		printf(" like a bad boy.\n");
 	}
 
 	void Warrior::moveBack()
 	{
-		ktrmscss1::Character::moveBack();
+		Character::moveBack();
 		printf(" like a bad boy.\n");
 	}
 }

@@ -5,10 +5,10 @@ namespace ktrmscss1
 	class Movable
 	{
 		public:
-			virtual void movesRight() = 0;
-			virtual void movesLeft() = 0;
-			virtual void movesForward() = 0;
-			virtual void movesBack() = 0;
+			virtual void moveRight() = 0;
+			virtual void moveLeft() = 0;
+			virtual void moveForward() = 0;
+			virtual void moveBack() = 0;
 	};
 }
 

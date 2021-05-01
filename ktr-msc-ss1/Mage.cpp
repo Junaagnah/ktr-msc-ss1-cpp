@@ -25,41 +25,41 @@ namespace ktrmscss1
 		{
 			if (weapon == "magic" || weapon == "wand")
 			{
-				ktrmscss1::Character::attack(weapon);
+				Character::attack(weapon);
 				printf("%s: Feel the power of my %s!\n", this->name.c_str(), weapon.c_str());
 			}
 			else
 			{
-				throw new ktrmscss1::WeaponException(this->name + ": I don't need this stupid " + weapon + "! Don't misjudge my powers!");
+				throw WeaponException(this->name + ": I don't need this stupid " + weapon + "! Don't misjudge my powers!");
 			}
 		}
 		else
 		{
-			throw new ktrmscss1::WeaponException(this->name + ": I refuse to fight with my bare hands.");
+			throw WeaponException(this->name + ": I refuse to fight with my bare hands.");
 		}
 	}
 
 	void Mage::moveRight()
 	{
-		ktrmscss1::Character::moveRight();
+		Character::moveRight();
 		printf(" furtively.\n");
 	}
 
 	void Mage::moveLeft()
 	{
-		ktrmscss1::Character::moveLeft();
+		Character::moveLeft();
 		printf(" furtively.\n");
 	}
 
 	void Mage::moveForward()
 	{
-		ktrmscss1::Character::moveForward();
+		Character::moveForward();
 		printf(" furtively.\n");
 	}
 
 	void Mage::moveBack()
 	{
-		ktrmscss1::Character::moveBack();
+		Character::moveBack();
 		printf(" furtively.\n");
 	}
 }

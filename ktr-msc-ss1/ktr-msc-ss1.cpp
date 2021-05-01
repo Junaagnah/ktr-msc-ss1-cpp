@@ -10,8 +10,16 @@ int main()
     ktrmscss1::Warrior warrior("Patrick");
     ktrmscss1::Mage mage("Pierre");
 
-    std::cout << "Press a key to exit..." << std::endl;
-    std::cin;
+    warrior.tryToAttack("");
+    mage.tryToAttack("screwdriver");
+    warrior.tryToAttack("wood stick");
+    warrior.tryToAttack("hammer");
+    warrior.tryToAttack("sword");
+    mage.tryToAttack("magic");
+    mage.tryToAttack("wand");
+    warrior.moveRight();
+    mage.moveLeft();
+    warrior.unsheatheWeapon();
 }
 
 // Exécuter le programme : Ctrl+F5 ou menu Déboguer > Exécuter sans débogage

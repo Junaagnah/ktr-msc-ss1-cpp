@@ -20,12 +20,12 @@ namespace ktrmscss1
 		public:
 			explicit Character(std::string name, std::string RPGClass = "Character");
 			virtual void attack(std::string weapon);
-			virtual void tryToAttack(std::string weapon);
+			void tryToAttack(std::string weapon);
 			virtual void moveRight();
 			virtual void moveLeft();
 			virtual void moveForward();
 			virtual void moveBack();
-			virtual void unsheatheWeapon();
+			void unsheatheWeapon();
 
 		protected:
 			std::string getName();

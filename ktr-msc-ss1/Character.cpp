@@ -6,7 +6,7 @@
 
 namespace ktrmscss1
 {
-	Character::Character(std::string name, std::string RPGClass)
+	Character::Character(const char* name, const char* RPGClass)
 	{
 		this->name = name;
 		this->RPGClass = RPGClass;
@@ -42,12 +42,12 @@ namespace ktrmscss1
 		return this->RPGClass;
 	}
 
-	void Character::attack(std::string weapon)
+	void Character::attack(const std::string& weapon)
 	{
 		printf("%s: Rrrrrrrrr ....\n", this->name.c_str());
 	}
 
-	void Character::tryToAttack(std::string weapon)
+	void Character::tryToAttack(const std::string& weapon)
 	{
 		try
 		{

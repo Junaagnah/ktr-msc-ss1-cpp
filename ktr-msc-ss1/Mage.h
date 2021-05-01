@@ -7,8 +7,8 @@ namespace ktrmscss1
 	class Mage : public Character
 	{
 		public:
-			explicit Mage(std::string name, std::string RPGClass = "Mage");
-			void attack(std::string weapon) override;
+			explicit Mage(const char* name, const char* RPGClass = "Mage");
+			void attack(const std::string& weapon) override;
 			void moveRight() override;
 			void moveLeft() override;
 			void moveForward() override;

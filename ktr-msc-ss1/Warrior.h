@@ -7,8 +7,8 @@ namespace ktrmscss1
 	class Warrior : public Character
 	{
 		public:
-			explicit Warrior(std::string name, std::string RPGClass = "Warrior");
-			void attack(std::string weapon) override;
+			explicit Warrior(const char* name, const char* RPGClass = "Warrior");
+			void attack(const std::string& weapon) override;
 			void moveRight() override;
 			void moveLeft() override;
 			void moveForward() override;

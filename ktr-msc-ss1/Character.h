@@ -18,9 +18,9 @@ namespace ktrmscss1
 
 		// Functions and methods
 		public:
-			explicit Character(std::string name, std::string RPGClass = "Character");
-			virtual void attack(std::string weapon);
-			void tryToAttack(std::string weapon);
+			explicit Character(const char* name, const char* RPGClass = "Character");
+			virtual void attack(const std::string& weapon);
+			void tryToAttack(const std::string& weapon);
 			virtual void moveRight();
 			virtual void moveLeft();
 			virtual void moveForward();

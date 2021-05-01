@@ -10,7 +10,7 @@ namespace ktrmscss1
 			std::string _message;
 
 		public:
-			explicit WeaponException(std::string message);
+			explicit WeaponException(const std::string& message);
 			const char* what() const noexcept override
 			{
 				return this->_message.c_str();

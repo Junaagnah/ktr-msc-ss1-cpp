@@ -6,22 +6,19 @@
 
 namespace ktrmscss1
 {
-	Mage::Mage(std::string name, std::string RPGClass) : ktrmscss1::Character::Character(name, RPGClass)
+	Mage::Mage(const char* name, const char* RPGClass) : ktrmscss1::Character::Character(name, RPGClass)
 	{
 		this->life = 70;
 		this->strenght = 3;
 		this->agility = 10;
 		this->wit = 10;
 
-		printf("%s: May the gods be with me.\n", name.c_str());
+		printf("%s: May the gods be with me.\n", name);
 	}
 
-	void Mage::attack(std::string weapon)
+	void Mage::attack(const std::string& weapon)
 	{
-		// Converting weapon to lower case
-		std::transform(weapon.begin(), weapon.end(), weapon.begin(), ::tolower);
-
-		if (weapon.find_first_not_of(' ') != std::string::npos)
+		if (weapon != "")
 		{
 			if (weapon == "magic" || weapon == "wand")
 			{

@@ -6,22 +6,19 @@
 
 namespace ktrmscss1
 {
-	Warrior::Warrior(std::string name, std::string RPGClass) : ktrmscss1::Character::Character(name, RPGClass)
+	Warrior::Warrior(const char* name, const char* RPGClass) : ktrmscss1::Character::Character(name, RPGClass)
 	{
 		this->life = 100;
 		this->strenght = 10;
 		this->agility = 8;
 		this->wit = 3;
 
-		printf("%s: My name will go down in history!\n", name.c_str());
+		printf("%s: My name will go down in history!\n", name);
 	}
 
-	void Warrior::attack(std::string weapon)
+	void Warrior::attack(const std::string& weapon)
 	{
-		// Converting weapon to lower case
-		std::transform(weapon.begin(), weapon.end(), weapon.begin(), ::tolower);
-
-		if (weapon.find_first_not_of(' ') != std::string::npos)
+		if (weapon != "")
 		{
 			if (weapon == "hammer" || weapon == "sword")
 			{

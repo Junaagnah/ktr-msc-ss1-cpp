@@ -3,7 +3,7 @@
 
 namespace ktrmscss1
 {
-	WeaponException::WeaponException(std::string message)
+	WeaponException::WeaponException(const std::string& message)
 	{
 		this->_message = message;
 	}

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ktr-msc-ss1", "ktr-msc-ss1\ktr-msc-ss1.vcxproj", "{BD85145B-4AE9-4CFE-B86C-B9336825EA09}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD85145B-4AE9-4CFE-B86C-B9336825EA09}.Debug|x64.ActiveCfg = Debug|x64
+		{BD85145B-4AE9-4CFE-B86C-B9336825EA09}.Debug|x64.Build.0 = Debug|x64
+		{BD85145B-4AE9-4CFE-B86C-B9336825EA09}.Debug|x86.ActiveCfg = Debug|Win32
+		{BD85145B-4AE9-4CFE-B86C-B9336825EA09}.Debug|x86.Build.0 = Debug|Win32
+		{BD85145B-4AE9-4CFE-B86C-B9336825EA09}.Release|x64.ActiveCfg = Release|x64
+		{BD85145B-4AE9-4CFE-B86C-B9336825EA09}.Release|x64.Build.0 = Release|x64
+		{BD85145B-4AE9-4CFE-B86C-B9336825EA09}.Release|x86.ActiveCfg = Release|Win32
+		{BD85145B-4AE9-4CFE-B86C-B9336825EA09}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F11A54FC-A482-4B96-8BD8-45408885A5A7}
+	EndGlobalSection
+EndGlobal
